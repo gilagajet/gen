@@ -124,7 +124,7 @@ svn export https://github.com/immortalwrt/immortalwrt/trunk/package/emortal/ipv6
 sed -i 's/16384/65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 
 # luci-app-easymesh
-svn export https://github.com/coolsnowwolf/luci/branches/master/applications/luci-app-easymesh feeds/luci/applications/luci-app-easymesh
+# svn export https://github.com/coolsnowwolf/luci/branches/master/applications/luci-app-easymesh feeds/luci/applications/luci-app-easymesh
 
 # Update and Install Feeds
 ./scripts/feeds update -a
