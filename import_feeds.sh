@@ -14,6 +14,14 @@ git clone -b master --depth 1 https://github.com/jerrykuku/luci-app-argon-config
 # luci-theme-edge
 git clone -b master --depth 1 https://github.com/kiddin9/luci-theme-edge.git package/new/luci-theme-edge
 
+# theme kenzok
+svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-atmaterial_new package/new/luci-theme-atmaterial_new 
+svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-ifit package/new/luci-theme-ifit 
+svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-mcat package/new/luci-theme-mcat 
+svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-neobird package/new/luci-theme-neobird 
+svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-opentopd package/new/luci-theme-opentopd 
+svn export https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-tomato package/new/luci-theme-tomato
+
 # Autocore
 svn export -r 219750 https://github.com/immortalwrt/immortalwrt/branches/master/package/emortal/autocore feeds/packages/utils/autocore
 sed -i 's/"getTempInfo" /"getTempInfo", "getCPUBench", "getCPUUsage" /g' feeds/packages/utils/autocore/files/generic/luci-mod-status-autocore.json
